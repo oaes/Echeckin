@@ -248,7 +248,7 @@ toggleProBanner() {
   render () {
     return (
       <div>
-        <div className="row proBanner">
+        {/* <div className="row proBanner">
           <div className="col-12">
             <span className="d-flex align-items-center purchase-popup">
               <p>Like what you see? Check out our premium version for more.</p>
@@ -257,7 +257,7 @@ toggleProBanner() {
               <i className="mdi mdi-close bannerClose" onClick={this.toggleProBanner}></i>
             </span>
           </div>
-        </div>
+        </div> */}
         <div className="row">
           <div className="col-xl-3 col-lg-6 col-md-6 col-sm-6 grid-margin stretch-card">
             <div className="card card-statistics">

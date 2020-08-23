@@ -22,10 +22,10 @@ class Navbar extends Component {
               <a href="!#" onClick={evt =>evt.preventDefault()} className="nav-link">
                 <i className="mdi mdi-elevation-rise"></i>Reports</a>
             </li>
-            <li className="nav-item d-none d-lg-flex">
+            {/* <li className="nav-item d-none d-lg-flex">
               <a href="!#" onClick={evt =>evt.preventDefault()} className="nav-link">
                 <i className="mdi mdi-bookmark-plus-outline"></i>Score</a>
-            </li>
+            </li> */}
           </ul>
           <ul className="navbar-nav navbar-nav-right ml-lg-auto">
             <li className="nav-item  nav-profile border-0">
