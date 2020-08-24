@@ -532,7 +532,7 @@ toggleProBanner() {
             </div>
           </div>
         </div>
-        <div className="row">
+        {/* <div className="row">
           <div className="col-md-4 grid-margin stretch-card">
             <div className="card">
               <div className="card-body py-5">
@@ -572,7 +572,7 @@ toggleProBanner() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="row">
           <div className="col-lg-12 grid-margin">
             <div className="card">
@@ -653,7 +653,7 @@ toggleProBanner() {
             </div>
           </div>
         </div>
-        <div className="row">
+        {/* <div className="row">
           <div className="col-12 grid-margin">
             <div className="card">
               <div className="card-body">
@@ -793,12 +793,12 @@ toggleProBanner() {
                         </Dropdown>
                       </div>
                     </div>
-                  </div>
-                </div>
+                  </div> 
+                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div> 
     );
   }
