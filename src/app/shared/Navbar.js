@@ -113,7 +113,7 @@ class Navbar extends Component {
                 </Dropdown.Menu>
               </Dropdown>
             </li>
-            <li className="nav-item  nav-profile border-0">
+            {/* <li className="nav-item  nav-profile border-0">
               <Dropdown alignRight>
                 <Dropdown.Toggle className="nav-link count-indicator bg-transparent">
                   <span className="profile-text">Richard V.Welsh !</span>
@@ -147,7 +147,7 @@ class Navbar extends Component {
                   </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
-            </li>
+            </li> */}
           </ul>
           <button className="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" onClick={this.toggleOffcanvas}>
             <span className="mdi mdi-menu"></span>

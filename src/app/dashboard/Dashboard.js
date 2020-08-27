@@ -305,14 +305,14 @@ toggleProBanner() {
                     <i className="mdi mdi-poll-box text-success icon-lg"></i>
                   </div>
                   <div className="float-right">
-                    <p className="mb-0 text-right text-dark">Sales</p>
+                    <p className="mb-0 text-right text-dark">Activity</p>
                     <div className="fluid-container">
-                      <h3 className="font-weight-medium text-right mb-0 text-dark">5693</h3>
+                      <h3 className="font-weight-medium text-right mb-0 text-dark">0018</h3>
                     </div>
                   </div>
                 </div>
                 <p className="text-muted mt-3 mb-0">
-                  <i className="mdi mdi-calendar mr-1" aria-hidden="true"></i> Weekly Sales </p>
+                  <i className="mdi mdi-calendar mr-1" aria-hidden="true"></i> Daily Activity </p>
               </div>
             </div>
           </div>
@@ -341,15 +341,15 @@ toggleProBanner() {
             <div className="card">
               <div className="card-body">
                 <div className="d-flex justify-content-between align-items-center mb-4">
-                  <h2 className="card-title mb-0">Product Analysis</h2>
+                  <h2 className="card-title mb-0">Daily Activity Analysis</h2>
                   <div className="wrapper d-flex">
                     <div className="d-flex align-items-center mr-3">
                       <span className="dot-indicator bg-success"></span>
-                      <p className="mb-0 ml-2 text-muted">Product</p>
+                      <p className="mb-0 ml-2 text-muted">Activity</p>
                     </div>
                     <div className="d-flex align-items-center">
                       <span className="dot-indicator bg-primary"></span>
-                      <p className="mb-0 ml-2 text-muted">Resources</p>
+                      <p className="mb-0 ml-2 text-muted">Human Resources</p>
                     </div>
                   </div>
                 </div>
@@ -519,10 +519,10 @@ toggleProBanner() {
               <div className="card-body">
                 <div className="row">
                   <div className="col-md-7">
-                    <h4 className="card-title font-weight-medium mb-3">Amount Due</h4>
+                    <h4 className="card-title font-weight-medium mb-3">Salary Due</h4>
                     <h1 className="font-weight-medium mb-0 text-dark">$5998</h1>
                     <p className="text-muted">Milestone Completed</p>
-                    <p className="mb-0">Payment for next week</p>
+                    <p className="mb-0">Salary for next month</p>
                   </div>
                   <div className="col-md-5 d-flex align-items-end mt-4 mt-md-0">
                     <Bar data={this.amountDueBarData} options={this.amountDueBarOptions} />    
@@ -651,6 +651,8 @@ toggleProBanner() {
                 </div>
               </div>
             </div>
+
+            
           </div>
         </div>
         {/* <div className="row">

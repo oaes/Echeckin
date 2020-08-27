@@ -9,9 +9,9 @@ export class Register extends Component {
           <div className="row w-100 mx-0">
             <div className="col-lg-4 mx-auto">
               <div className="auth-form-light text-left py-5 px-4 px-sm-5">
-                <div className="brand-logo">
+                {/* <div className="brand-logo">
                   <img src={require("../../assets/images/logo.svg")} alt="logo" />
-                </div>
+                </div> */}
                 <h4>New here?</h4>
                 <h6 className="font-weight-light">Signing up is easy. It only takes a few steps</h6>
                 <form className="pt-3">

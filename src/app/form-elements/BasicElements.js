@@ -16,7 +16,7 @@ export class BasicElements extends Component {
     return (
       <div>
         <div className="page-header">
-          <h3 className="page-title"> Form elements </h3>
+          <h3 className="page-title"> Checkout for today from the premises </h3>
           <nav aria-label="breadcrumb">
             <ol className="breadcrumb">
               <li className="breadcrumb-item">
