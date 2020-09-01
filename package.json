@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "homepage": "https://bootstrapdash.com/demo/star-admin-free/react/template/demo_1/preview",
   "private": true,
+  "engines": {
+    "node":"12.16.1",
+    "npm":"6.13.4"
+  },
   "dependencies": {
     "@mdi/font": "^4.5.95",
     "bootstrap": "^4.3.1",
