@@ -3,6 +3,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 
 import Spinner from '../app/shared/Spinner';
 
+
 const Dashboard = lazy(() => import('./dashboard/Dashboard'));
 
 const Buttons = lazy(() => import('./basic-ui/Buttons'));
@@ -10,6 +11,8 @@ const Dropdowns = lazy(() => import('./basic-ui/Dropdowns'));
 const Typography = lazy(() => import('./basic-ui/Typography'));
 
 const BasicElements = lazy(() => import('./form-elements/BasicElements'));
+
+const Leave= lazy(() => import('./leave/Leave.js'));
 
 const BasicTable = lazy(() => import('./tables/BasicTable'));
 
@@ -40,7 +43,7 @@ class AppRoutes extends Component {
 
           <Route path="/form-Elements/basic-elements" component={ BasicElements } />
 
-          <Route path="/tables/basic-table" component={ BasicTable } />
+          <Route path="/leave" component={ Leave } />
 
           <Route path="/icons/font-awesome" component={ FontAwesome } />
 

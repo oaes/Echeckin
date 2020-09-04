@@ -1,4 +1,4 @@
- import React, { Component } from 'react';
+import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import { Collapse } from 'react-bootstrap';
 import { Dropdown } from 'react-bootstrap';
@@ -34,7 +34,7 @@ class Sidebar extends Component {
     const dropdownPaths = [
       {path:'/basic-ui', state: 'basicUiMenuOpen'},
       {path:'/form-elements', state: 'formElementsMenuOpen'},
-      {path:'/tables', state: 'tablesMenuOpen'},
+      {path:'/leave', state: 'leaveMenuOpen'},
       {path:'/icons', state: 'iconsMenuOpen'},
       {path:'/charts', state: 'chartsMenuOpen'},
       {path:'/user-pages', state: 'userPagesMenuOpen'},
@@ -50,25 +50,11 @@ class Sidebar extends Component {
   render () {
     return (
       <nav className="sidebar sidebar-offcanvas" id="sidebar">
-        {/* <div className="text-center sidebar-brand-wrapper d-flex align-items-center">
-          <a className="sidebar-brand brand-logo" href="index.html"><img src={require("../../assets/images/logo.svg")} alt="logo" /></a>
-          <a className="sidebar-brand brand-logo-mini pt-3" href="index.html"><img src={require("../../assets/images/logo-mini.svg" )} alt="logo" /></a>
-        </div> */}
         <ul className="nav">
           <li className="nav-item nav-profile not-navigation-link">
             <div className="nav-link">
               <Dropdown>
                 <Dropdown.Toggle className="nav-link user-switch-dropdown-toggler p-0 toggle-arrow-hide bg-transparent border-0 w-100">
-                  {/* <div className="d-flex justify-content-between align-items-start">
-                    <div className="profile-image">
-                      <img src={ require("../../assets/images/faces/face8.jpg")} alt="profile" />
-                    </div>
-                    <div className="text-left ml-3">
-                      <p className="profile-name">Richard V.Welsh</p>
-                      <small className="designation text-muted text-small">Manager</small>
-                      <span className="status-indicator online"></span>
-                    </div>
-                  </div> */}
                 </Dropdown.Toggle>
                 <Dropdown.Menu className="preview-list navbar-dropdown">
                   <Dropdown.Item className="dropdown-item p-0 preview-item d-flex align-items-center" href="!#" onClick={evt =>evt.preventDefault()}>
@@ -128,6 +114,13 @@ class Sidebar extends Component {
               <span className="menu-title">Check-out Form Premises</span>
             </Link>
           </li>
+
+          <li className={ this.isPathActive('/leave') ? 'nav-item active' : 'nav-item' }>
+            <Link className="nav-link" to="/leave">
+              <i className="mdi mdi-email-open menu-icon"></i>
+              <span className="menu-title">Leave</span>
+            </Link>
+          </li>
           {/* <li className={ this.isPathActive('/tables') ? 'nav-item active' : 'nav-item' }>
             <Link className="nav-link" to="/tables/basic-table">
               <i className="mdi mdi-table-large menu-icon"></i>
@@ -162,12 +155,6 @@ class Sidebar extends Component {
               </ul>
             </Collapse>
           </li>
-          {/* <li className="nav-item">
-            <a className="nav-link" href="http://www.bootstrapdash.com/demo/star-admin-free/react/documentation/documentation.html" rel="noopener noreferrer" target="_blank">
-              <i className="mdi mdi-file-outline menu-icon"></i>
-              <span className="menu-title">Documentation</span>
-            </a>
-          </li> */}
         </ul>
       </nav>
     );
