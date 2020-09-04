@@ -94,6 +94,12 @@ class Sidebar extends Component {
               <span className="menu-title">Dashboard</span>
             </Link>
           </li>
+          <li className={ this.isPathActive('/viewattendance') ? 'nav-item active' : 'nav-item' }>
+            <Link className="nav-link" to="/viewattendance">
+              <i className="mdi mdi-tooltip-edit menu-icon"></i>
+              <span className="menu-title">View Attendance Records</span>
+            </Link>
+          </li>
           {/* <li className={ this.isPathActive('/basic-ui') ? 'nav-item active' : 'nav-item' }>
             <div className={ this.state.basicUiMenuOpen ? 'nav-link menu-expanded' : 'nav-link' } onClick={ () => this.toggleMenuState('basicUiMenuOpen') } data-toggle="collapse">
               <i className="mdi mdi-crosshairs-gps menu-icon"></i>

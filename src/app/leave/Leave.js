@@ -62,7 +62,6 @@ export class Leave extends Component {
                       type="date"
                       className="form-control"
                       id="start"
-                      value='2020-09-04'
                       min='2020-01-01'
                       max='2022-01-01'
                       
@@ -75,7 +74,6 @@ export class Leave extends Component {
                       type="date"
                       className="form-control"
                       id="end"
-                      value='2020-09-04'
                       min='2020-01-01'
                       max='2022-01-01'
                     />

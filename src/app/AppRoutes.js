@@ -14,6 +14,8 @@ const BasicElements = lazy(() => import('./form-elements/BasicElements'));
 
 const Leave= lazy(() => import('./leave/Leave.js'));
 
+const ViewAttendance=lazy(() => import('./viewattendance/ViewAttendance.js'));
+
 const BasicTable = lazy(() => import('./tables/BasicTable'));
 
 const FontAwesome = lazy(() => import('./icons/FontAwesome'));
@@ -44,6 +46,8 @@ class AppRoutes extends Component {
           <Route path="/form-Elements/basic-elements" component={ BasicElements } />
 
           <Route path="/leave" component={ Leave } />
+
+          <Route path="/viewattendance" component={ViewAttendance}/>
 
           <Route path="/icons/font-awesome" component={ FontAwesome } />
 
