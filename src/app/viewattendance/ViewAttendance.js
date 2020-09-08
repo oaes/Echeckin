@@ -1,13 +1,36 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react';
+import {
+  Box,
+  Container,
+  makeStyles
+} from '@material-ui/core';
+import Result from './Result';
+import Toolbar from './Toolbar';
+import data from './data';
 
-export class ViewAttendance extends Component {
-  render() {
-    return (
-      <div>
-        <h1>details</h1>
-      </div>
-    )
+const useStyles = makeStyles((theme) => ({
+  root: {
+    backgroundColor: theme.palette.background.dark,
+    minHeight: '100%',
+    paddingBottom: theme.spacing(3),
+    paddingTop: theme.spacing(3)
   }
-}
+}));
+
+const ViewAttendance = () => {
+  const classes = useStyles();
+  const [views] = useState(data);
+
+  return (
+    
+      <Container maxWidth={false}>
+        <Toolbar />
+        <Box mt={3}>
+          <Result views={views} />
+        </Box>
+      </Container>
+    
+  );
+};
 
 export default ViewAttendance;
