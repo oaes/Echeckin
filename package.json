@@ -4,10 +4,14 @@
   "homepage": "https://bootstrapdash.com/demo/star-admin-free/react/template/demo_1/preview",
   "private": true,
   "engines": {
-    "node":"12.16.1",
-    "npm":"6.13.4"
+    "node": "12.16.1",
+    "npm": "6.13.4"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.56",
+    "@material-ui/styles": "^4.10.0",
     "@mdi/font": "^4.5.95",
     "bootstrap": "^4.3.1",
     "bosket": "^0.2.3",
@@ -31,7 +35,8 @@
     "react-scripts": "^3.4.3",
     "react-select": "^3.0.8",
     "react-sparklines": "^1.7.0",
-    "react-table": "^6.10.3"
+    "react-table": "^6.10.3",
+    "uuid": "^8.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
