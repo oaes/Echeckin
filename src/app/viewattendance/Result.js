@@ -17,7 +17,7 @@ import {
   Typography,
   makeStyles
 } from '@material-ui/core';
-import getInitials from 'src/utils/getInitials';
+import getInitials from '../../utils/getInitials';
 
 const useStyles = makeStyles((theme) => ({
   root: {},
@@ -78,35 +78,24 @@ const Results = ({ className, customers, ...rest }) => {
       {...rest}
     >
       <PerfectScrollbar>
-        <Box minWidth={1050}>
+        <Box minWidth={1000}>
           <Table>
             <TableHead>
               <TableRow>
-                <TableCell padding="checkbox">
-                  <Checkbox
-                    checked={selectedCustomerIds.length === customers.length}
-                    color="primary"
-                    indeterminate={
-                      selectedCustomerIds.length > 0
-                      && selectedCustomerIds.length < customers.length
-                    }
-                    onChange={handleSelectAll}
-                  />
+                <TableCell>
+                  SL No:
                 </TableCell>
                 <TableCell>
-                  Name
+                  UserName
                 </TableCell>
                 <TableCell>
-                  Email
+                  Date
                 </TableCell>
                 <TableCell>
-                  Location
+                  Permission
                 </TableCell>
                 <TableCell>
-                  Phone
-                </TableCell>
-                <TableCell>
-                  Registration date
+                  CheckPoint
                 </TableCell>
               </TableRow>
             </TableHead>
@@ -117,43 +106,20 @@ const Results = ({ className, customers, ...rest }) => {
                   key={customer.id}
                   selected={selectedCustomerIds.indexOf(customer.id) !== -1}
                 >
-                  <TableCell padding="checkbox">
-                    <Checkbox
-                      checked={selectedCustomerIds.indexOf(customer.id) !== -1}
-                      onChange={(event) => handleSelectOne(event, customer.id)}
-                      value="true"
-                    />
+                  <TableCell>
+                    {customer.sl}
                   </TableCell>
                   <TableCell>
-                    <Box
-                      alignItems="center"
-                      display="flex"
-                    >
-                      <Avatar
-                        className={classes.avatar}
-                        src={customer.avatarUrl}
-                      >
-                        {getInitials(customer.name)}
-                      </Avatar>
-                      <Typography
-                        color="textPrimary"
-                        variant="body1"
-                      >
-                        {customer.name}
-                      </Typography>
-                    </Box>
+                      {customer.name}
                   </TableCell>
                   <TableCell>
-                    {customer.email}
+                    {customer.date}
                   </TableCell>
                   <TableCell>
-                    {`${customer.address.city}, ${customer.address.state}, ${customer.address.country}`}
+                    {`${customer.permission}`}
                   </TableCell>
                   <TableCell>
-                    {customer.phone}
-                  </TableCell>
-                  <TableCell>
-                    {moment(customer.createdAt).format('DD/MM/YYYY')}
+                   {customer.checkpoint}
                   </TableCell>
                 </TableRow>
               ))}

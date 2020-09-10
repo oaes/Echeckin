@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
+import AddIcon from '@material-ui/icons/Add';
 import {
   Box,
   Button,
@@ -16,10 +17,10 @@ import { Search as SearchIcon } from 'react-feather';
 const useStyles = makeStyles((theme) => ({
   root: {},
   importButton: {
-    marginRight: theme.spacing(1)
+    marginRight: theme.spacing(2)
   },
   exportButton: {
-    marginRight: theme.spacing(1)
+    marginRight: theme.spacing(2)
   }
 }));
 
@@ -35,17 +36,17 @@ const Toolbar = ({ className, ...rest }) => {
         display="flex"
         justifyContent="flex-end"
       >
-        <Button className={classes.importButton}>
+        {/* <Button className={classes.importButton}>
           Import
         </Button>
         <Button className={classes.exportButton}>
           Export
-        </Button>
+        </Button> */}
         <Button
           color="primary"
           variant="contained"
         >
-          Add customer
+        <AddIcon/>  Add New Collaborator
         </Button>
       </Box>
       <Box mt={3}>
@@ -66,7 +67,7 @@ const Toolbar = ({ className, ...rest }) => {
                     </InputAdornment>
                   )
                 }}
-                placeholder="Search customer"
+                placeholder="Search...."
                 variant="outlined"
               />
             </Box>

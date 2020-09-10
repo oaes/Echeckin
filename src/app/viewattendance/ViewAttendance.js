@@ -8,6 +8,7 @@ import Result from './Result';
 import Toolbar from './Toolbar';
 import data from './data';
 
+
 const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: theme.palette.background.dark,
@@ -19,14 +20,14 @@ const useStyles = makeStyles((theme) => ({
 
 const ViewAttendance = () => {
   const classes = useStyles();
-  const [views] = useState(data);
+  const [customers] = useState(data);
 
   return (
     
       <Container maxWidth={false}>
         <Toolbar />
         <Box mt={3}>
-          <Result views={views} />
+          <Result customers={customers} />
         </Box>
       </Container>
     
